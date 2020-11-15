@@ -7,10 +7,12 @@ public class Person {
     private final String lastName;
     private final String gender;
 
+
     public Person(String firstName, String lastName, String gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
+
     }
 
     @Override
@@ -31,7 +33,8 @@ public class Person {
 
     @Override
     public int hashCode() {
-        return (2 * firstName.hashCode()) + (3 * lastName.hashCode()) + (5 * gender.hashCode());
+        return (2 * firstName.hashCode()) + (3 * lastName.hashCode()) + (5 * Gender.MALE.hashCode())+
+                (Gender.FEMALE.hashCode());
     }
 
     @Override
@@ -42,4 +45,6 @@ public class Person {
                 ", gender=" + gender +
                 '}';
     }
+
+
 }
