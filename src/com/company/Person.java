@@ -5,10 +5,10 @@ import java.util.Objects;
 public class Person {
     private final String firstName;
     private final String lastName;
-    private final String gender;
+    private final Gender gender;
 
 
-    public Person(String firstName, String lastName, String gender) {
+    public Person(String firstName, String lastName, Gender gender) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.gender = gender;
@@ -26,15 +26,14 @@ public class Person {
         }
 
         Person person = (Person) obj;
-        return firstName.equals(person.firstName) && lastName.equals(person.firstName)
+        return firstName.equals(person.firstName) && lastName.equals(person.lastName)
                 && gender.equals(person.gender);
 
     }
 
     @Override
     public int hashCode() {
-        return (2 * firstName.hashCode()) + (3 * lastName.hashCode()) + (5 * Gender.MALE.hashCode())+
-                (Gender.FEMALE.hashCode());
+        return (2 * firstName.hashCode()) + (3 * lastName.hashCode()) + (5 * gender.hashCode());
     }
 
     @Override

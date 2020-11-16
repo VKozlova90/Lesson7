@@ -7,11 +7,11 @@ import java.util.List;
 public class Main {
 
         public static void main(String[] args) {
-        Person person1 = new Person ("Tom", "Tomov", "MALE");
-        Person person2 = new Person ("Mil", "Milov", "MALE");
-        Person person3 = new Person ("Stim", "Stimov", "MALE");
-        Person person4 = new Person ("Ann", "Bond", "FEMALE");
-        Person person5 = new Person ("Kate", "Bond", "FEMALE");
+        Person person1 = new Person ("Tom", "Tomov", Gender.MALE);
+        Person person2 = new Person ("Mil", "Milov", Gender.MALE);
+        Person person3 = new Person ("Stim", "Stimov", Gender.MALE);
+        Person person4 = new Person ("Ann", "Bond", Gender.FEMALE);
+        Person person5 = new Person ("Kate", "Bond", Gender.FEMALE);
 
         List <Person> list = new ArrayList<>();
         list.add (person1);
@@ -30,11 +30,11 @@ public class Main {
 
             System.out.println ();
 
-        Person person6 = new Person ("Tom", "Tomov", "MALE");
-        Person person7 = new Person ("Tom", "Tomov", "MALE");
-        Person person8 = new Person ("Stim", "Stimov", "MALE");
-        Person person9 = new Person ("Ann", "Bond", "FEMALE");
-        Person person10 = new Person ("Ann", "Bond", "FEMALE");
+        Person person6 = new Person ("Tom", "Tomov", Gender.MALE);
+        Person person7 = new Person ("Tom", "Tomov", Gender.MALE);
+        Person person8 = new Person ("Stim", "Stimov", Gender.MALE);
+        Person person9 = new Person ("Ann", "Bond", Gender.FEMALE);
+        Person person10 = new Person ("Ann", "Bond", Gender.FEMALE);
 
          Set <Person> set = new HashSet<>();
         set.add (person6);
@@ -50,11 +50,11 @@ public class Main {
 
             System.out.println ();
 
-            Person person11 = new Person ("Tom", "Tomov", "MALE");
-            Person person12 = new Person ("Mil", "Milov", "MALE");
-            Person person13 = new Person ("Stim", "Stimov", "MALE");
-            Person person14 = new Person ("Ann", "Bond", "FEMALE");
-            Person person15 = new Person ("Kate", "Bond", "FEMALE");
+            Person person11 = new Person ("Tom", "Tomov", Gender.MALE);
+            Person person12 = new Person ("Mil", "Milov", Gender.MALE);
+            Person person13 = new Person ("Stim", "Stimov", Gender.MALE);
+            Person person14 = new Person ("Ann", "Bond", Gender.FEMALE);
+            Person person15 = new Person ("Kate", "Bond", Gender.FEMALE);
 
             Map <Integer, Person> map = new HashMap <Integer, Person>();
 
